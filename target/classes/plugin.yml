@@ -1,0 +1,15 @@
+name: Man10Dicelottery
+version: '1.0'
+main: yusama125718_209282ihcuobust.man10dicelottery.Man10Dicelottery
+api-version: 1.17
+
+commands:
+  mdicelottery:
+    description: start lottery
+    usage: /<command> [text] [text]
+
+parmissions:
+  mdicelottery.op:
+    default: op
+  mdicelottery.player:
+    default: true
