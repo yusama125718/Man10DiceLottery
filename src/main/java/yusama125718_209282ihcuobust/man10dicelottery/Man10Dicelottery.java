@@ -115,17 +115,17 @@ public final class Man10Dicelottery extends JavaPlugin
                         {
                             if (sender.hasPermission("mdicelottery.op"))
                             {
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [ダイスの面数] [時間(秒)] : §lゲームを開始します");
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery hede : §l非表示にします");
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery show : §l表示します");
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [数字] : §l抽選に応募します(ゲーム中のみ)");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [ダイスの面数] [時間(秒)] : §lゲームを開始します");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot hide : §l非表示にします");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot show : §l表示します");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [数字] : §l抽選に応募します(ゲーム中のみ)");
                                 return true;
                             }
                             else
                             {
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery hede : §l非表示にします");
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery show : §l表示します");
-                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [数字] : §l抽選に応募します(ゲーム中のみ)");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot hide : §l非表示にします");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot show : §l表示します");
+                                sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [数字] : §l抽選に応募します(ゲーム中のみ)");
                                 return true;
                             }
                         }
@@ -215,7 +215,7 @@ public final class Man10Dicelottery extends JavaPlugin
                                                     {
                                                         if (!dissableplayers.contains(player.getUniqueId()))
                                                         {
-                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber)).getName() + "§lは" + outnumber + "§lをピッタリ予想しました！");
+                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber)).getName() + "§lは出目を §eピッタリ §f予想しました！");
                                                         }
                                                     }
                                                 }
@@ -225,7 +225,7 @@ public final class Man10Dicelottery extends JavaPlugin
                                                     {
                                                         if (!dissableplayers.contains(player.getUniqueId()))
                                                         {
-                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber + 1)).getName() + "§lは" + outnumber + "§lを1つ多く予想しました！");
+                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber + 1)).getName() + "§lは出目を §e1つ多く §f予想しました！");
                                                         }
                                                     }
                                                 }
@@ -235,7 +235,7 @@ public final class Man10Dicelottery extends JavaPlugin
                                                     {
                                                         if (!dissableplayers.contains(player.getUniqueId()))
                                                         {
-                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber - 1)).getName() + "§lは" + outnumber + "§lを 1つ少なく 予想しました！");
+                                                            player.sendMessage("§l[§e§lMan10DiceLottery§f§l]§r" + Bukkit.getOfflinePlayer(appliedplayers.get(outnumber - 1)).getName() + "§lは出目を §e1つ少なく §f予想しました！");
                                                         }
                                                     }
                                                 }
@@ -271,17 +271,17 @@ public final class Man10Dicelottery extends JavaPlugin
                 {
                     if (sender.hasPermission("mdicelottery.op"))
                     {
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [ダイスの面数] [時間(秒)] : §lゲームを開始します");
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery hede : §l非表示にします");
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery show : §l表示します");
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [数字] : §l抽選に応募します(ゲーム中のみ)");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [ダイスの面数] [時間(秒)] : §lゲームを開始します");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot hide : §l非表示にします");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot show : §l表示します");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [数字] : §l抽選に応募します(ゲーム中のみ)");
                         return true;
                     }
                     else
                     {
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery hede : §l非表示にします");
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery show : §l表示します");
-                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mdicelottery [数字] : §l抽選に応募します(ゲーム中のみ)");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot hide : §l非表示にします");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot show : §l表示します");
+                        sender.sendMessage("§l[§e§lMan10DiceLottery§f§l] §7/mlot [数字] : §l抽選に応募します(ゲーム中のみ)");
                         return true;
                     }
                 }
